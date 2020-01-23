@@ -1,0 +1,25 @@
+/*
+Write a program that prints the numbers from 1 to 100. But for 
+multiples of three print "Fizz" instead of the number and for the 
+multiples of five print "Buzz". For numbers which are multiples of 
+both three and five print "FizzBuzz".
+*/
+
+function fizzBuzz(num) {
+let numArr = [];
+
+    for (i = 1; i <= num; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            numArr.push("FizzBuzz");
+        } else if (i % 3 == 0) {
+            numArr.push("Fizz");
+        } else if (i % 5 == 0) {
+            numArr.push("Buzz");
+        } else numArr.push(i);
+    }
+    return numArr;
+}
+
+console.log(fizzBuzz(100));
+
+
