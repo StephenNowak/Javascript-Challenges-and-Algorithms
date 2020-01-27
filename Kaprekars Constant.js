@@ -24,8 +24,6 @@ function KaprekarsConstant(num) {
     }
 }
 
-
-
 function KapConReducer(num) {
     if (num.toString().length < 4) {
         num = num.toString().slice(0) + 0;

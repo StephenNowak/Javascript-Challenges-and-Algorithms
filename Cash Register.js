@@ -30,7 +30,16 @@ One-hundred Dollars	$100 (ONE HUNDRED)
 */
 
 function checkCashRegister(price, cash, cid) {
+    let changeDue = 0;
+    let drawerCash = 0;
 
+    for (let i = 0; i < cid.length; i++) {
+        for (let j = 0; j < cid[i].length; j++) {
+            drawerCash += cid[i][j];
+        }
+    }
+
+    return drawerCash;
 }
 
 
